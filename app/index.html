@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>Aaron Weinberg</title>
-    <link rel="shortcut icon" type="image/x-icon" href="styles/favicon.ico"/>
     <meta charset="utf-8">
     <meta name="description" content="weinberg app">
     <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/x-icon" href="styles/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -19,13 +20,29 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="col-xs-12 col-sm-10" id="header">
-                <h1>My website</h1>
+
+    <div class="container">
+        <div class="row" id="header">
+            <div class="col-xs-4">
+                <li id="projects_button">Projects</li>
+            </div>
+            <div class="col-xs-4">
+                <li>Home</li>
+            </div>
+            <div class="col-xs-4">
+                <li>About</li>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class="col-xs-3 col-sm-3 col-md-2"  id="project_list" style="display:none">
+                <div>
+                    <li>Tic Tac Toe</li>
+                    <li>Battleship</li>
+                </div>
             </div>
         </div>
     </div>
-
-
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>

@@ -1,3 +1,32 @@
+body{
+  background: url("background.jpg") no-repeat top center;
+  background-size: 100%;
+}
+.container{
+  margin:0;
+  width: 100%;
+  padding: 0;
+}
 #header{
-  background-color: blue;
+  text-align: center;
+  background-color: #336699;
+  opacity: 0.8;
+  font-size:35px;
+  margin: 0;
+}
+li{
+  font-family: 'Fjalla One', sans-serif;
+  list-style-type: none;
+  font-weight: bold;
+}
+#project_list{
+  background-color: #336699;
+  opacity: 0.8;
+  height: 600px;
+  font-size: 24px;
+}
+#project_list li{
+margin-top: 15px;
+margin-left: 10px;
+
 }
