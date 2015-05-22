@@ -1,5 +1,5 @@
 body{
-  background: url("background.jpg") no-repeat top center;
+  background: url("/media/background2.jpg") no-repeat top center;
   background-size: 100%;
 }
 .container{
@@ -7,26 +7,39 @@ body{
   width: 100%;
   padding: 0;
 }
+.row{
+  margin: 0;
+  padding: 0;
+}
+
 #header{
   text-align: center;
-  background-color: #336699;
-  opacity: 0.8;
+  background-color: rgba(51, 102, 153,0.3);
   font-size:35px;
   margin: 0;
 }
-li{
-  font-family: 'Fjalla One', sans-serif;
+#header li{
+  font-family: 'Montserrat', sans-serif;
   list-style-type: none;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
+
+.home_sentence h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+
 #project_list{
-  background-color: #336699;
-  opacity: 0.8;
-  height: 600px;
+  background-color: rgba(51, 102, 153,0.3);
+  height: calc(100vh - 50px);
   font-size: 24px;
 }
 #project_list li{
-margin-top: 15px;
-margin-left: 10px;
-
+  font-family: 'Fjalla One', sans-serif;
+  list-style-type: none;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
 }
