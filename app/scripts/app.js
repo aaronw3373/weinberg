@@ -26,11 +26,10 @@
     $('#foot').hide()
     $('#lfoot').hide()
     $('#cfoot').hide()
-    board = ["","","","","","","","",""];
-    reset();
-    resett();
-    resetall();
   });
+
+
+
   $('#battleship_button').on('click',function(){
     $('#battleship_page').show()
     $('#ttt_page').hide()

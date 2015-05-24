@@ -1,11 +1,21 @@
 $(document).ready(function(){
 //show chat
-  $('#togleChat').on('click', function(){
-    $('#chatbox').toggle(500,'swing');
-    $('#playbox').toggle(500,'swing');
+  $('#head').on('click',function(){
+    $('#ttt_page').show()
+    $('#login').show()
+    $('#playbox').hide()
+    $('#chatbox').hide()
+    $('#foot').hide()
+    $('#lfoot').hide()
+    $('#cfoot').hide()
   });
 
-  // //chat calls
+  $('#togleChat').on('click', function(){
+  $('#chatbox').toggle(500,'swing');
+  $('#playbox').toggle(500,'swing');
+  });
+
+  //chat calls
   // var messageRef = new Firebase('https://tick-tack-toe.firebaseio.com/message');
   // function displayChatMessage(name, text) {
   //     $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
@@ -27,7 +37,7 @@ $(document).ready(function(){
   //   messageRef.set(null);
   //   $('#messagesDiv').html('');
   // });
-  //end chat calls
+  //send chat calls
 
   //choose play type
   $('#login').on('click', function(event){
@@ -38,6 +48,7 @@ $(document).ready(function(){
 
     //start play over network;
     if (event.target.id=== 'network'){
+      reset();
 
       $('#foot').show(500, 'swing');
 
@@ -230,11 +241,15 @@ $(document).ready(function(){
 
 
 
+
+
   //end play over Network
     }
 
   //start play locally
     else if(event.target.id=== 'local'){
+      lreset();
+
       $('#lfoot').show(500, 'swing');
         var luser = 0;
         var lusers = ["O","X"];
@@ -329,9 +344,7 @@ $(document).ready(function(){
           lcount = 0;
         });
 
-
-        $('#lreset').on('click', function(event){
-          console.log("Reset");
+        function lreset(){
           for (var i = 1; i < 10; i++) {
             var reset = '#' + (i);
             $(reset).html('');
@@ -348,10 +361,11 @@ $(document).ready(function(){
           lcount = 0;
           lxscore = 0;
           loscore = 0
+        }
+        $('#lreset').on('click', function(event){
+          console.log("Reset");
+          lreset();
         });
-
-
-
 
 
       //end play locally
@@ -367,6 +381,7 @@ $(document).ready(function(){
     //start local v computer
     else if(event.target.id=== 'compute'){
       $('#cfoot').show(500, 'swing');
+      resetall();
 
 
 
@@ -657,7 +672,9 @@ $(document).ready(function(){
 
     //end local v computer
     }
-
+    $('#ttt_button').on('click',function(){
+        return
+      });
     //click jquery to choose online or local or compute
   })
 //doc ready over all
