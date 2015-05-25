@@ -1,5 +1,5 @@
 body{
-  background: url("media/background2.jpg") no-repeat top center;
+  background: url("/styles/media/background.jpg") no-repeat top center;
   background-size: 100%;
   min-width: 700px;
 }
@@ -85,7 +85,6 @@ body{
     padding-bottom: 8px;
   }
 }
-
 @media (max-width: 900px) {
   .home_sentence h2{
     font-size: 40px;
