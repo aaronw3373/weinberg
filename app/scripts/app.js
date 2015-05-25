@@ -28,6 +28,10 @@
       $('#foot').hide()
       $('#lfoot').hide()
       $('#cfoot').hide()
+      $('#splitboard_page').hide()
+      $('#snowmachine_page').hide()
+      $('#speakers_page').hide()
+      $('#battleship_page').hide()
       $('#ttt_page').show()
       $('#login').show()
     });
