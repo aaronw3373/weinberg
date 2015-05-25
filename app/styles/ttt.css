@@ -1,10 +1,17 @@
-#head{
+#ttt_header{
   text-align: center;
   font-size: 3em;
   background-color: #00aa00;
   border-radius: 20px;
   margin-top: 20px;
 }
+/*#togleChat{
+  text-align: center;
+  font-size: 3em;
+  background-color: #00aa00;
+  border-radius: 20px;
+  margin-top: 20px;
+}*/
 #chatbox{
   margin-top: 20px;
   height: 490px;

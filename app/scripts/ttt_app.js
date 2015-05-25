@@ -1,6 +1,6 @@
 $(document).ready(function(){
 //show chat
-  $('#head').on('click',function(){
+  $('#ttt_header').on('click',function(){
     $('#ttt_page').show()
     $('#login').show()
     $('#playbox').hide()
@@ -11,11 +11,12 @@ $(document).ready(function(){
   });
 
   $('#togleChat').on('click', function(){
-  $('#chatbox').toggle(500,'swing');
-  $('#playbox').toggle(500,'swing');
+    $('#chatbox').toggle(500,'swing');
+    $('#playbox').toggle(500,'swing');
+    $('#login').toggle(500,'swing');
   });
 
-  //chat calls
+  // //chat calls
   // var messageRef = new Firebase('https://tick-tack-toe.firebaseio.com/message');
   // function displayChatMessage(name, text) {
   //     $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
@@ -37,7 +38,7 @@ $(document).ready(function(){
   //   messageRef.set(null);
   //   $('#messagesDiv').html('');
   // });
-  //send chat calls
+  // //end chat calls
 
   //choose play type
   $('#login').on('click', function(event){
@@ -100,7 +101,7 @@ $(document).ready(function(){
       }
 
       function newGame(){
-        $('h1').html("Tic Tac Toe");
+        $('#ttt_header').html("Tic Tac Toe");
         board = ["","","","","","","","",""];
         winner = undefined;
         disable = false;
@@ -210,7 +211,7 @@ $(document).ready(function(){
             disable = true;
             if (snap.winner === "tie"){
               console.log("twas a tie");
-                $('h1').html("Tie");
+                $('#ttt_header').html("Tie");
               }else{
                 xscore = snap.xscore;
                 oscore = snap.oscore;
@@ -218,7 +219,7 @@ $(document).ready(function(){
                 $('#oscore').html('O Score: ' + oscore);
                 $('#xscore').html('X Score: ' + xscore);
                 console.log("the winner is: " + snap.winner);
-                $('h1').html(snap.winner + " WINS");
+                $('#ttt_header').html(snap.winner + " WINS");
                 }
           }
 
@@ -312,10 +313,10 @@ $(document).ready(function(){
               if (wine(local)){
                 lwinner = lusers[luser];
                 console.log("the winner is: " + lwinner);
-                $('h1').html(lwinner + " WINS");
+                $('#ttt_header').html(lwinner + " WINS");
               }else if (ties()){
                 console.log("twas a tie");
-                $('h1').html("Tie");
+                $('#ttt_header').html("Tie");
               }
             }
           }
@@ -328,7 +329,7 @@ $(document).ready(function(){
             var reset = '#' + (i);
             $(reset).html('');
           };
-          $('h1').html("Tic Tac Toe");
+          $('#ttt_header').html("Tic Tac Toe");
           luser = 0;
           lwinner = undefined;
           lsingleX = [];
@@ -343,7 +344,7 @@ $(document).ready(function(){
             var reset = '#' + (i);
             $(reset).html('');
           };
-          $('h1').html("Tic Tac Toe");
+          $('#ttt_header').html("Tic Tac Toe");
           $('#lxscore').html('X Score: 0');
           $('#loscore').html('O Score: 0');
           luser = 0;
@@ -568,7 +569,7 @@ $(document).ready(function(){
           var reset = '#' + (i);
           $(reset).html('');
         };
-        $('h1').html("Tic Tac Toe");
+        $('#ttt_header').html("Tic Tac Toe");
 
         Cboard = ["","","","","","","","",""];
         playSingle = [];
@@ -589,7 +590,7 @@ $(document).ready(function(){
           var reset = '#' + (i);
           $(reset).html('');
         };
-        $('h1').html("Tic Tac Toe");
+        $('#ttt_header').html("Tic Tac Toe");
         $('#cxscore').html('X Score: 0');
         $('#coscore').html('O Score: 0');
 
@@ -619,18 +620,18 @@ $(document).ready(function(){
               Cboard[event.target.id-1] = person;
               if (winer(event.target.id,play,person)){
                 victor = person;
-                $('h1').html(person + " WINS");
+                $('#ttt_header').html(person + " WINS");
                 cxscore++;
                 $('#cxscore').html("X Score: "+ cxscore);
 
               }else if(tier()){
-                $('h1').html("Tie");
+                $('#ttt_header').html("Tie");
               }else{
                 //computer turns
                 setTimeout(function(){
                   if(canWin()){
                     victor = computer;
-                    $('h1').html(victor + " WINS");
+                    $('#ttt_header').html(victor + " WINS");
                     coscore++;
                     $('#coscore').html("O Score: "+ coscore);
 

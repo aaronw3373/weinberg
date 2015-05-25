@@ -26,6 +26,7 @@ body{
 }
 
 .home_sentence h2{
+  margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 50px;
@@ -45,5 +46,61 @@ body{
   margin-left: 10px;
 }
 
+#about_page{
+  background-color: rgba(255, 255, 255,.8);
+  height: calc(100vh - 50px);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+#about_page h1{
+  font-weight: bold;
+  border-bottom: solid 2px;
+  border-color: #336699;
+  padding-bottom: 15px;
+}
+#about_content{
+  padding-top:5px;
+  padding-bottom:0px;
+}
+#about_page p{
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+#about_page address{
+  font-size: 30px;
+  padding-top: 15px;
+  border-top: solid 2px;
+  border-color: #336699;
+}
+
 #ttt_page{
+}
+
+@media (max-width: 1200px) {
+  body{
+    background: white;
+  }
+  #about_page p{
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home_sentence h2{
+    font-size: 40px;
+  }
+  #about_page p{
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 750px) {
+  .home_sentence h2{
+    font-size: 30px;
+  }
+  #about_page p{
+    font-size: 16px;
+    padding-bottom: 2px;
+  }
 }
