@@ -48,7 +48,21 @@ $(document).ready(function(){
 
     //start play over network;
     if (event.target.id=== 'network'){
-      reset();
+
+      var local;
+      var gameRef = new Firebase('https://tick-tack-toe.firebaseio.com/game');
+      var gameAuth;
+      var player;
+      var board = ["","","","","","","","",""];
+      var winner;
+      var singleX = [];
+      var sumsX = [];
+      var singleO = [];
+      var sumsO = [];
+      var xscore = 0;
+      var oscore = 0;
+      var count = 0;
+      var disable = false;
 
       $('#foot').show(500, 'swing');
 
@@ -95,7 +109,7 @@ $(document).ready(function(){
         singleO = [];
         sumsO = [];
         count = 0;
-        gameRef.set({board:board, player:"X"});
+        gameRef.set({board:board, player:"X", xscore:xscore, oscore:oscore});
       }
 
       function reset(){
@@ -114,24 +128,7 @@ $(document).ready(function(){
         }
       }
 
-
-
-      var local;
-      var gameRef = new Firebase('https://tick-tack-toe.firebaseio.com/game');
-      var gameAuth;
-      var player;
-      var board = ["","","","","","","","",""];
-      var winner;
-      var singleX = [];
-      var sumsX = [];
-      var singleO = [];
-      var sumsO = [];
-      var xscore = 0;
-      var oscore = 0;
-      var count = 0;
-      var disable = false;
-
-        gameRef.set({board:board, player:"X", resett:true});
+        gameRef.set({board:board, player:"X", reset:true});
 
         var otherPlayer = function(player) {
           return player === 'X' ? 'O' : 'X';
@@ -161,7 +158,8 @@ $(document).ready(function(){
                 board: board,
                 player: otherPlayer(player),
                 waitingPlayer: gameAuth.uid,
-                local: local
+                local: local,
+
               };
 
               if (win(local)){
@@ -195,8 +193,8 @@ $(document).ready(function(){
           if (snap.newGame){
             newGame();
           }
-          if (snap.resett){
-            resett();
+          if (snap.reset){
+            reset();
           }
 
           disable = false;
@@ -230,13 +228,13 @@ $(document).ready(function(){
         //reset board keep scores
         $('#new').on('click', function(){
           board = ["","","","","","","","",""];
-          gameRef.set({board:board, player:"X", newGame:true});
+          gameRef.set({board:board, player:"X", newGame:true, xscore:xscore, oscore:oscore});
         });
 
         //reset scores and board
         $('#reset').on('click', function(){
           board = ["","","","","","","","",""];
-          gameRef.set({board:board, player:"X", resett:true});
+          gameRef.set({board:board, player:"X", reset:true});
         });
 
 
@@ -281,8 +279,6 @@ $(document).ready(function(){
             lsumsX.push(lsingleX[j]+local);
           }
           lsingleX.push(local);
-          console.log("singleX: " + lsingleX);
-          console.log("sumsX: " + lsumsX);
         } else {
             for (var k = 0; k < lsumsO.length; k++) {
               if (lsumsO[k] + local === 15){
@@ -295,8 +291,6 @@ $(document).ready(function(){
               lsumsO.push(lsingleO[l]+local);
             }
             lsingleO.push(local);
-            console.log("singleO: " + lsingleO);
-            console.log("sumsO: " + lsumsO);
           }
       }
 

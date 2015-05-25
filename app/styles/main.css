@@ -1,5 +1,5 @@
 body{
-  background: url("/media/background2.jpg") no-repeat top center;
+  background: url("media/background2.jpg") no-repeat top center;
   background-size: 100%;
   min-width: 700px;
 }
@@ -46,4 +46,5 @@ body{
 }
 
 #ttt_page{
+  height: 80%;
 }
