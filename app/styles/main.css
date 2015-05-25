@@ -1,5 +1,5 @@
 body{
-  background: url("/styles/media/background.jpg") no-repeat top center;
+  background: url(/pics/background.jpg) no-repeat top center;
   background-size: 100%;
   min-width: 700px;
 }
