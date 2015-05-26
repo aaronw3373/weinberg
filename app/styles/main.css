@@ -1,7 +1,8 @@
 body{
-  background: url(/images/background.jpg) no-repeat top center;
-  background-size: 100%;
+  background: url(/images/background.jpg) no-repeat;
+  background-size: cover;
   min-width: 700px;
+  background-attachment: fixed;
 }
 .container{
   margin:0;
@@ -16,7 +17,7 @@ body{
 #header{
   text-align: center;
   background-color: rgba(51, 102, 153,0.3);
-  font-size:35px;back
+  font-size:35px;
   margin: 0;
 }
 #header li{
@@ -48,7 +49,7 @@ body{
 
 #about_page{
   background-color: rgba(255, 255, 255,.8);
-  height: calc(100vh - 50px);
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
@@ -69,12 +70,25 @@ body{
 #about_page address{
   font-size: 30px;
   padding-top: 15px;
+  padding-bottom: 4px;
   border-top: solid 2px;
   border-color: #336699;
 }
-
-#ttt_page{
+#social{
+  border-top: solid 2px;
+  border-color: #336699;
+  padding-top:10px;
+  padding-bottom: 15px;
 }
+.social{
+  font-size: 2em;
+}
+.social-github{
+  /*background: url("/images/GitHub_Logo.png") no-repeat;*/
+  /*background-size: 100px;*/
+
+}
+
 
 @media (max-width: 1200px) {
   body{
