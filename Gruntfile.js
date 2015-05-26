@@ -224,7 +224,7 @@ module.exports = function (grunt) {
       options: {
         assetsDirs: [
           '<%= config.dist %>',
-          '<%= config.dist %>/images',
+          '<%= config.dist %>/weinberg/images',
           '<%= config.dist %>/styles'
         ]
       },
