@@ -313,7 +313,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/{,*/}*.jpg',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
           ]
