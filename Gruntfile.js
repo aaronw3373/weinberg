@@ -239,7 +239,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/images',
           src: '{,*/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.dist %>/weinberg/images'
+          dest: '<%= config.dist %>/images'
         }]
       }
     },
