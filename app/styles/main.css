@@ -91,9 +91,6 @@ body{
 
 
 @media (max-width: 1200px) {
-  body{
-    background: white;
-  }
   #about_page p{
     font-size: 22px;
     padding-bottom: 8px;
@@ -107,6 +104,9 @@ body{
     font-size: 18px;
     padding-bottom: 5px;
   }
+  /*body{
+    background: white;
+  }*/
 }
 @media (max-width: 750px) {
   .home_sentence h2{
