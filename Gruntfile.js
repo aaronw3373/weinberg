@@ -224,7 +224,7 @@ module.exports = function (grunt) {
       options: {
         assetsDirs: [
           '<%= config.dist %>',
-          '<%= config.dist %>/weinberg/images',
+          '<%= config.dist %>/images',
           '<%= config.dist %>/styles'
         ]
       },
@@ -239,7 +239,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/images',
           src: '{,*/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.dist %>/images'
+          dest: '<%= config.dist %>/weinberg/images'
         }]
       }
     },
