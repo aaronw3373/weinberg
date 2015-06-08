@@ -18,7 +18,7 @@
     $('#splitboard_page').hide()
     $('#snowmachine_page').hide()
     $('#speakers_page').hide()
-    $('#battleship_page').hide()
+    $('#powder_page').hide()
     $('#project_page').show()
   });
 
@@ -31,38 +31,38 @@
       $('#splitboard_page').hide()
       $('#snowmachine_page').hide()
       $('#speakers_page').hide()
-      $('#battleship_page').hide()
+      $('#powder_page').hide()
       $('#ttt_page').show()
       $('#login').show()
     });
 
-    $('#battleship_button').on('click',function(){
+    $('#powder_button').on('click',function(){
       $('#ttt_page').hide()
       $('#splitboard_page').hide()
       $('#snowmachine_page').hide()
       $('#speakers_page').hide()
-      $('#battleship_page').show()
+      $('#powder_page').show()
     });
 
     $('#splitboard_button').on('click',function(){
       $('#ttt_page').hide()
       $('#snowmachine_page').hide()
       $('#speakers_page').hide()
-      $('#battleship_page').hide()
+      $('#powder_page').hide()
       $('#splitboard_page').show()
     });
 
     $('#snowmachine_button').on('click',function(){
       $('#ttt_page').hide()
       $('#speakers_page').hide()
-      $('#battleship_page').hide()
+      $('#powder_page').hide()
       $('#splitboard_page').hide()
       $('#snowmachine_page').show()
     });
 
     $('#speakers_button').on('click',function(){
       $('#ttt_page').hide()
-      $('#battleship_page').hide()
+      $('#powder_page').hide()
       $('#splitboard_page').hide()
       $('#snowmachine_page').hide()
       $('#speakers_page').show()

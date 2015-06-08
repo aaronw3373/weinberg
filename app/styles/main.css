@@ -46,6 +46,12 @@ body{
   margin-top: 15px;
   margin-left: 10px;
 }
+#powder_page{
+  text-align: center;
+  margin-top: 20%;
+  font-size: 64pt;
+  color:#000000;
+}
 
 #about_page{
   background-color: rgba(255, 255, 255,.8);
