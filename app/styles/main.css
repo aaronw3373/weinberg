@@ -1,7 +1,7 @@
 body{
   background: url(../images/background.jpg) no-repeat;
   background-size: cover;
-  min-width: 700px;
+  min-width: 1200px;
   background-attachment: fixed;
 }
 .container{
@@ -16,22 +16,37 @@ body{
 
 #header{
   text-align: center;
-  background-color: rgba(51, 102, 153,0.3);
+  background-color: rgba(51, 102, 153,1);
   font-size:45px;
   margin: 0;
-
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 #header li{
   font-family: 'Montserrat', sans-serif;
   list-style-type: none;
+  color:white;
+  position: relative;
   /*font-weight: bold;*/
+}
+.head_button{
+  color:#333333;
 }
 .head_button:hover{
   color:white;
 }
+#content{
+  margin-top:64px;
+}
+#home_page{
+  margin-bottom: 100px;
+}
+#head_top{
+  padding-top: 100px;
+}
 
 .home_sentence h2{
-  margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
@@ -40,12 +55,13 @@ body{
 
 #project_list{
   background-color: rgba(51, 102, 153,0.3);
-  height: calc(100vh - 65px);
-  font-size: 24px;
+  height: calc(100vh - 60px);
+  font-size: 32px;
 }
 #project_list li{
   font-family: 'Fjalla One', sans-serif;
   list-style-type: none;
+
   font-weight: bold;
   margin-top: 15px;
   margin-left: 10px;
@@ -80,12 +96,14 @@ a:active {
 }
 
 #about_page{
-  background-color: rgba(255, 255, 255,.8);
+  background-color: rgba(255, 255, 255,.5);
   height: 100%;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 #about_page h1{
+  padding-top: 50px;
+  font-size: 35pt;
   font-weight: bold;
   border-bottom: solid 2px;
   border-color: #336699;
@@ -96,7 +114,7 @@ a:active {
   padding-bottom:0px;
 }
 #about_page p{
-  font-size: 26px;
+  font-size: 30px;
   padding-bottom: 10px;
 }
 #about_page address{
