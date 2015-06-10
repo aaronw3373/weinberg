@@ -17,26 +17,30 @@ body{
 #header{
   text-align: center;
   background-color: rgba(51, 102, 153,0.3);
-  font-size:35px;
+  font-size:45px;
   margin: 0;
+
 }
 #header li{
   font-family: 'Montserrat', sans-serif;
   list-style-type: none;
   /*font-weight: bold;*/
 }
+.head_button:hover{
+  color:white;
+}
 
 .home_sentence h2{
   margin-top: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 
 #project_list{
   background-color: rgba(51, 102, 153,0.3);
-  height: calc(100vh - 50px);
+  height: calc(100vh - 65px);
   font-size: 24px;
 }
 #project_list li{
@@ -46,11 +50,33 @@ body{
   margin-top: 15px;
   margin-left: 10px;
 }
+#project_list li:hover{
+  color:white;
+}
 #powder_page{
   text-align: center;
   margin-top: 20%;
   font-size: 64pt;
   color:#000000;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  text-decoration: none;
 }
 
 #about_page{
