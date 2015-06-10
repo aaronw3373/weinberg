@@ -3,6 +3,7 @@ body{
   background-size: cover;
   min-width: 1200px;
   background-attachment: fixed;
+  overflow: scroll;
 }
 .container{
   margin:0;
@@ -16,7 +17,7 @@ body{
 
 #header{
   text-align: center;
-  background-color: rgba(51, 102, 153,1);
+  background-color: rgba(25, 71, 117,1);
   font-size:45px;
   margin: 0;
   width: 100%;
@@ -26,7 +27,6 @@ body{
 #header li{
   font-family: 'Montserrat', sans-serif;
   list-style-type: none;
-  color:white;
   position: relative;
   /*font-weight: bold;*/
 }
@@ -38,9 +38,10 @@ body{
 }
 #content{
   margin-top:64px;
+  overflow: hidden;
 }
 #home_page{
-  margin-bottom: 100px;
+  margin-bottom: 800px;
 }
 #head_top{
   padding-top: 100px;
@@ -52,45 +53,18 @@ body{
   font-size: 60px;
 }
 
-
-#project_list{
-  background-color: rgba(51, 102, 153,0.3);
-  height: calc(100vh - 60px);
-  font-size: 32px;
-}
-#project_list li{
-  font-family: 'Fjalla One', sans-serif;
-  list-style-type: none;
-
-  font-weight: bold;
-  margin-top: 15px;
-  margin-left: 10px;
-}
-#project_list li:hover{
-  color:white;
-}
-#powder_page{
-  text-align: center;
-  margin-top: 20%;
-  font-size: 64pt;
-  color:#000000;
-}
-
 a:link {
   text-decoration: none;
 }
 
-/* visited link */
 a:visited {
   text-decoration: none;
 }
 
-/* mouse over link */
 a:hover {
   text-decoration: none;
 }
 
-/* selected link */
 a:active {
   text-decoration: none;
 }
@@ -118,13 +92,14 @@ a:active {
   padding-bottom: 10px;
 }
 #about_page address{
-  font-size: 30px;
+  font-size: 50px;
   padding-top: 15px;
   padding-bottom: 4px;
   border-top: solid 2px;
   border-color: #336699;
 }
 #social{
+  font-size: 40px;
   border-top: solid 2px;
   border-color: #336699;
   padding-top:10px;
@@ -138,6 +113,30 @@ a:active {
   /*background-size: 100px;*/
 
 }
+
+#projects_page{
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+.project{
+  height:500px;
+}
+.project_inner{
+  background-size: cover;
+  border: #194775 solid 12px;
+  border-radius: 15px;
+  margin: 35px;
+  height: 430px;
+
+}
+#powder_page{
+  background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
+}
+#tt_page{
+  background-image: url("../images/Screenshot%20from%202015-06-10%2018%3A04%3A56.png");
+}
+
+
 
 
 @media (max-width: 1200px) {
