@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#projects_button").on("click",function(){$("html, body").animate({scrollTop:$("projects_page_location").offset()},2e3)}),$("#home_button").on("click",function(){}),$("#about_button").on("click",function(){})});
