@@ -315,6 +315,7 @@ a:focus {
         padding-top: 100px;
         padding-bottom: 100px;
     }
+
     #projects{
         padding-top:50px;
         padding-bottom: 150px;
@@ -375,6 +376,7 @@ ul.banner-social-buttons {
         height: 330px;
     }
 
+
 }
 
 @media(max-width:767px) {
@@ -392,6 +394,12 @@ ul.banner-social-buttons {
     }
     .project_inner{
         height: 230px;
+    }
+    #about h2{
+        font-size: 28pt
+    }
+    .projects-section h2{
+    font-size: 28pt;
     }
 }
 
