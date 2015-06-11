@@ -303,7 +303,7 @@ a:focus {
 }
 .project_inner{
   background-size: cover;
-  border: #fff solid 2px;
+  border: #fff solid 3px;
   margin: 35px;
   height: 480px;
 }
