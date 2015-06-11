@@ -272,6 +272,22 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+#projects_container{
+    width:100%;
+    margin:0;
+    padding: 0;
+}
+.project{
+  height:500px;
+  margin: 0;
+  padding: 0;
+}
+.project_inner{
+  background-size: cover;
+  border: #fff solid 2px;
+  margin: 35px;
+  height: 430px;
+}
 
 
 
@@ -326,6 +342,13 @@ ul.banner-social-buttons {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+    .project{
+        height: 400px;
+    }
+    .project_inner{
+        height: 330px;
+    }
+
 }
 
 @media(max-width:767px) {
@@ -337,6 +360,12 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+    .project{
+        height: 300px;
+    }
+    .project_inner{
+        height: 230px;
     }
 }
 
@@ -382,35 +411,25 @@ body {
     font-size: 18pt;
 }
 
-#projects_container{
-width:100%;
-margin:0;
-padding: 0;
-}
 
-.project{
-  height:500px;
-  margin: 0;
-  padding: 0;
-}
-.project_inner{
-  background-size: cover;
-  border: #fff solid 2px;
-  margin: 35px;
-  height: 430px;
 
-}
+
+
 /*#powder_page{
   background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
+  background-position: center;
 }
 #ttt_page{
   background-image: url("../images/Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
+  background-position: center;
 }*/
 #powder_page{
   background-image: url("../images/87edf3d8.Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
+  background-position: center;
 }
 #ttt_page{
   background-image: url("../images/a9e03aa0.Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
+  background-position: center;
 }
 
 #contact_head{
