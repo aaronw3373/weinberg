@@ -1,3 +1,1 @@
-<<<<<<< HEAD
 #weinberg
-my website
