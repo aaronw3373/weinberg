@@ -375,8 +375,9 @@ ul.banner-social-buttons {
     .project_inner{
         height: 330px;
     }
-
-
+    #about p{
+        font-size: 17pt
+    }
 }
 
 @media(max-width:767px) {
@@ -398,8 +399,14 @@ ul.banner-social-buttons {
     #about h2{
         font-size: 28pt
     }
+    #about p{
+        font-size: 16pt
+    }
     .projects-section h2{
-    font-size: 28pt;
+        font-size: 28pt;
+    }
+    #content_head{
+        font-size: 24pt;
     }
 }
 
