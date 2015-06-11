@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/background.jpg) no-repeat bottom center scroll;
+    background: url(../images/background.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -399,10 +399,10 @@ padding: 0;
 
 }
 #powder_page{
-  background-image: url("../img/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
+  background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
 }
 #ttt_page{
-  background-image: url("../img/Screenshot%20from%202015-06-10%2018%3A04%3A56.png");
+  background-image: url("../images/Screenshot%20from%202015-06-10%2018%3A04%3A56.png");
 }
 
 #contact_head{
