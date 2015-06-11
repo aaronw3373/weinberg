@@ -297,7 +297,7 @@ a:focus {
     padding: 0;
 }
 .project{
-  height:500px;
+  height:550px;
   margin: 0;
   padding: 0;
 }
@@ -305,7 +305,7 @@ a:focus {
   background-size: cover;
   border: #fff solid 2px;
   margin: 35px;
-  height: 430px;
+  height: 480px;
 }
 
 
@@ -370,10 +370,10 @@ ul.banner-social-buttons {
         margin-top: 15px;
     }
     .project{
-        height: 400px;
+        height: 500px;
     }
     .project_inner{
-        height: 330px;
+        height: 430px;
     }
     #about p{
         font-size: 17pt
@@ -391,10 +391,11 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
     .project{
-        height: 300px;
+        height: 400px;
+        margin-top: 10px;
     }
     .project_inner{
-        height: 230px;
+        height: 330px;
     }
     #about h2{
         font-size: 28pt
@@ -445,14 +446,14 @@ body {
 
 
 
-/*#powder_page{
+#powder_page{
   background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
   background-position: center;
 }
 #ttt_page{
   background-image: url("../images/Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
   background-position: center;
-}*/
+}/*
 #powder_page{
   background-image: url("../images/87edf3d8.Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
   background-position: center;
@@ -460,6 +461,6 @@ body {
 #ttt_page{
   background-image: url("../images/6d23042b.Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
   background-position: center;
-}
+}*/
 
 
