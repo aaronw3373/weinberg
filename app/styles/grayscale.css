@@ -268,7 +268,7 @@ a:focus {
 }
 #about h2{
     font-size: 36pt;
-    color: #42dca3;
+    color: #fff;
 }
 #about p{
     font-size: 18pt;
@@ -277,7 +277,7 @@ a:focus {
 .projects-section {
     width: 100%;
     padding: 50px 0;
-    color: #42dca3;
+    color: #fff;
     /*background: url(../img/projects-bg.jpg) no-repeat center center scroll;*/
     background-color: #336699;
     -webkit-background-size: cover;
