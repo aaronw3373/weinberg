@@ -23,3 +23,14 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+$(document).ready(function() {
+
+    setTimeout(function() {
+      $('#intro_text').slideDown(700);
+       $('#down_arrow').slideDown(700);
+    },0);
+
+});
+
+
