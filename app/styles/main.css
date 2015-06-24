@@ -221,7 +221,7 @@ a:focus {
 .btn-circle:hover i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: .5s;
     -moz-animation-duration: 1.5s;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -445,7 +445,7 @@ body {
 
 
 
-/*
+
 #powder_page{
   background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
   background-position: center;
@@ -453,7 +453,9 @@ body {
 #ttt_page{
   background-image: url("../images/Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
   background-position: center;
-}*/
+}
+
+/*
 #powder_page{
   background-image: url("../images/87edf3d8.Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
   background-position: center;
@@ -461,6 +463,6 @@ body {
 #ttt_page{
   background-image: url("../images/8a8b0d4a.Screenshot%20from%202015-06-11%2009%3A02%3A26.png");
   background-position: center;
-}
+}*/
 
 
