@@ -291,7 +291,7 @@ a:focus {
 .projects-section p{
     font-size: 20pt;
 }
-#projects_container{
+.projects_container{
     width:100%;
     margin:0;
     padding: 0;
