@@ -291,16 +291,60 @@ a:focus {
     padding: 0;
 }
 .project{
-  height:550px;
+  /*height:550px;*/
   padding: 0;
 }
 .project_inner{
   background-size: cover;
   border: #fff solid 3px;
-  margin: 35px;
+  margin: 40px;
   height: 480px;
 }
-
+@media(max-width:549px) {
+    .project_inner{
+        height: 250px;
+    }
+}
+@media(min-width:550px) {
+    .project_inner{
+        height: 300px;
+    }
+}
+@media(min-width:650px) {
+    .project_inner{
+        height: 350px;
+    }
+}
+@media(min-width:750px) {
+    .project_inner{
+        height: 400px;
+    }
+}
+@media(min-width:850px) {
+    .project_inner{
+        height: 480px;
+    }
+}
+@media(min-width:992px) {
+    .project_inner{
+        height: 250px;
+    }
+}
+@media(min-width:1200px) {
+    .project_inner{
+        height: 350px;
+    }
+}
+@media(min-width:1500px) {
+    .project_inner{
+        height: 400px;
+    }
+}
+@media(min-width:1700px) {
+    .project_inner{
+        height: 480px;
+    }
+}
 
 
 @media(min-width:767px) {
@@ -362,12 +406,6 @@ ul.banner-social-buttons {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
-    .project{
-        height: 500px;
-    }
-    .project_inner{
-        height: 430px;
-    }
     #about p{
         font-size: 17pt
     }
@@ -384,11 +422,7 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
     .project{
-        height: 400px;
         margin-top: 10px;
-    }
-    .project_inner{
-        height: 330px;
     }
     #about h2{
         font-size: 28pt
@@ -438,8 +472,8 @@ body {
 
 
 
-
-/*#powder_page{
+/*
+#powder_page{
   background-image: url("../images/Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
   background-position: center;
 }
@@ -450,8 +484,8 @@ body {
 #clarkesocial_page{
   background-image: url("../images/clarkesocial.jpg");
   background-position: center;
-}*/
-
+}
+*/
 
 #powder_page{
   background-image: url("../images/87edf3d8.Screenshot%20from%202015-06-10%2017%3A02%3A28.png");
@@ -465,5 +499,6 @@ body {
   background-image: url("../images/fd69ab08.clarkesocial.jpg");
   background-position: center;
 }
+
 
 
